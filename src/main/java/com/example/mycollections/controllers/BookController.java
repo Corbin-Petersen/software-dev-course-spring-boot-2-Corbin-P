@@ -25,7 +25,7 @@ public class BookController {
     public String getBooksHtml() {
         String bookList = "<ul>";
         for (Book book : books) {
-            bookList += "<li>" + book + "</li>";
+            bookList += "<li>" + book.getName() + "</li>";
         }
         bookList += "</ul>";
 
@@ -35,7 +35,7 @@ public class BookController {
                         <h1>Books</h1>
                         <ul>
                 """ +
-                bookList + 
+                bookList +
                 """
                         </ul>
                     </body>
