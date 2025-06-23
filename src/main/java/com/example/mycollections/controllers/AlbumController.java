@@ -19,7 +19,7 @@ public class AlbumController {
     }};
 
     @GetMapping("/json")
-    public List<Album> getBooksJson() {
+    public List<Album> getAlbumsJson() {
         return albums;
     }
 
